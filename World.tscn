@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://knhupx4ijukh"]
 
+[ext_resource type="Script" uid="uid://cum3sudlaluvh" path="res://bird.gd" id="1_2dftf"]
 [ext_resource type="Texture2D" uid="uid://ccg5lwcdaf3lj" path="res://assets/Player/StyleBird1/Bird1-2.png" id="1_c6gwx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2dftf"]
@@ -43,6 +44,7 @@ animations = [{
 [node name="World" type="Node2D" unique_id=1049290190]
 
 [node name="Bird" type="RigidBody2D" parent="." unique_id=352672063]
+script = ExtResource("1_2dftf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bird" unique_id=1809514019]
 position = Vector2(105, 37)
