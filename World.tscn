@@ -90,3 +90,6 @@ motion_mirroring = Vector2(216, 0)
 [node name="SimpleStyle1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=925126947]
 position = Vector2(154, 307)
 texture = ExtResource("4_eu7l1")
+
+[node name="TileMap" type="TileMap" parent="ParallaxBackground/ParallaxLayer" unique_id=1305303408]
+format = 2
