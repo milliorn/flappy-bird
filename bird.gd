@@ -10,4 +10,9 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-func _input(event): print(event) 
+func _input(event):
+	if event is InputEventMouseButton:
+		if event.button_index == 1:
+			self.set_linear_velocity(Vector2(0, -150))
+			self.set_angular_velocity(-3)
+			$AnimatedSprite2D.play("fly")
