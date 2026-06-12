@@ -1,0 +1,78 @@
+[gd_scene format=4 uid="uid://c44nwt7q5tkpx"]
+
+[ext_resource type="Texture2D" uid="uid://dwophmyougw00" path="res://assets/Tiles/Style 1/PipeStyle1.png" id="1_og227"]
+[ext_resource type="Script" uid="uid://b5klceavtf1qh" path="res://pipes.gd" id="2_l4tgv"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wygdx"]
+texture = ExtResource("1_og227")
+texture_region_size = Vector2i(32, 16)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -8, 16, -8, 16, 8, -16, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -8, 16, -8, 16, 8, -16, 8)
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.363518, -8, 13.841209, -8, 14.363518, 8, -14.015312, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.363518, -8, 13.841209, -8, 14.363518, 8, -14.015312, 8)
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.363518, -8, 13.841209, -8, 14.363518, 8, -14.015312, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.363518, -8, 13.841209, -8, 14.363518, 8, -14.015312, 8)
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.363518, -8, 13.841209, -8, 14.363518, 8, -14.015312, 8)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.363518, -8, 13.841209, -8, 14.363518, 8, -14.015312, 8)
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -8, 16, -8, 16, 8, -16, 8)
+3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -8, 16, -8, 16, 8, -16, 8)
+0:5/0 = 0
+0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -8, 16, -8, 16, 8, -16, 8)
+1:5/0 = 0
+1:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -8, 16, -8, 16, 8, -16, 8)
+2:5/0 = 0
+3:5/0 = 0
+0:6/0 = 0
+0:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.363518, -8, 13.841209, -8, 14.363518, 8, -14.015312, 8)
+1:6/0 = 0
+1:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.363518, -8, 13.841209, -8, 14.363518, 8, -14.015312, 8)
+2:6/0 = 0
+3:6/0 = 0
+0:7/0 = 0
+0:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.363518, -8, 13.841209, -8, 14.363518, 8, -14.015312, 8)
+1:7/0 = 0
+1:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.363518, -8, 13.841209, -8, 14.363518, 8, -14.015312, 8)
+2:7/0 = 0
+3:7/0 = 0
+0:8/0 = 0
+0:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.363518, -8, 13.841209, -8, 14.363518, 8, -14.015312, 8)
+1:8/0 = 0
+1:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.363518, -8, 13.841209, -8, 14.363518, 8, -14.015312, 8)
+2:8/0 = 0
+3:8/0 = 0
+0:9/0 = 0
+0:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -8, 16, -8, 16, 8, -16, 8)
+1:9/0 = 0
+1:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -8, 16, -8, 16, 8, -16, 8)
+2:9/0 = 0
+3:9/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_bah7m"]
+tile_size = Vector2i(32, 16)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_wygdx")
+
+[node name="Pipes" type="TileMapLayer" unique_id=1251003947]
+tile_map_data = PackedByteArray("AAAGAAIAAAABAAcAAAAGAAMAAAABAAcAAAAGAAQAAAABAAgAAAAGAAUAAAABAAkAAAAGAAAAAAABAAYAAAAGAAEAAAABAAcAAAAGAA4AAAABAAUAAAAGAA8AAAABAAYAAAAGABAAAAABAAcAAAAGABEAAAABAAcAAAAGABIAAAABAAcAAAAGABMAAAABAAcAAAA=")
+tile_set = SubResource("TileSet_bah7m")
+script = ExtResource("2_l4tgv")

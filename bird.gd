@@ -21,3 +21,5 @@ func _input(event):
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.name == "Floor":
 		self.queue_free()
+	if body.name == "Pipes":
+		self.queue_free()
